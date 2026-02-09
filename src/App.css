@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,83 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+/* Custom properties for easy color management */
+:root {
+  --primary-bg: #0f172a;
+  --card-bg: #1e293b;
+  --accent-color: #38bdf8;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --btn-grad: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.App {
+  background-color: var(--primary-bg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', -apple-system, sans-serif;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.presentation-card {
+  background: var(--card-bg);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.counter-value {
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--accent-color);
+  margin: 1rem 0;
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+button {
+  background: var(--btn-grad);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.4);
+  filter: brightness(1.1);
+}
+
+button:active {
+  transform: translateY(0);
 }
