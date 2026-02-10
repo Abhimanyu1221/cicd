@@ -10,3 +10,4 @@ jobs:
         run: npm install
       - name: Run logic tests
         run: npm test -- --watchAll=false 
+    
