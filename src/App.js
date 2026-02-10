@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css'; // Don't forget to import the CSS!
 
 function App() {
-  const [count, setCount] = useState(10);
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
