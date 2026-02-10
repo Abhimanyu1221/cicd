@@ -1,12 +1,12 @@
 name: React CI Pipeline
-on: [push] # Trigger on every push
+on: [push] 
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest # The build server environment
+    runs-on: ubuntu-latest 
     steps:
-      - uses: actions/checkout@v4 # Download the code
+      - uses: actions/checkout@v4 
       - name: Install dependencies
         run: npm install
       - name: Run logic tests
-        run: npm test -- --watchAll=false # The Quality Gate
+        run: npm test -- --watchAll=false 

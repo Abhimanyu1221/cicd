@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
-import './App.css'; // Don't forget to import the CSS!
+import './App.css'; 
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(10);
 
   return (
     <div className="App">
       <div className="presentation-card">
         <h1>CI/CD Pipeline</h1>
         
-        {/* data-testid is crucial for automation */}
         <h2 className="counter-value" data-testid="counter-display">
           {count}
         </h2>
